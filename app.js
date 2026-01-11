@@ -27,6 +27,7 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       "script-src": ["'self'", "cdn.jsdelivr.net"],
+      connectSrc: ["'self'", "https://cdn.jsdelivr.net"],
     },
   }),
 );
