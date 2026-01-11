@@ -19,7 +19,6 @@ exports.bookinstance_detail = async (req, res, next) => {
     .exec();
 
   if (bookInstance === null) {
-    // No results.
     const err = new Error("Book copy not found");
     err.status = 404;
     return next(err);
